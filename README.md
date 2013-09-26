@@ -7,6 +7,8 @@ Toţi suntem sătui de încălcările repetate şi flagrante ale Codului Rutier.
 
 Pentru sugestii, ajutor sau erori vă rog să mă contactați la adresa de e-mail micku7zu@gmail.com sau pe facebook http://facebook.com/micku7zu
 
+Link aplicație play store: https://play.google.com/store/apps/details?id=com.micutu.trafictube
+Link aplicație APK: https://raw.github.com/micku7zu/trafictube/master/Trafictube_v0.4.apk
 
 
 Changelog

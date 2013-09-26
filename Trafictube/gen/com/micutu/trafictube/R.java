@@ -9,10 +9,16 @@ package com.micutu.trafictube;
 
 public final class R {
     public static final class anim {
-        public static final int slide_in_from_bottom=0x7f040000;
-        public static final int slide_in_from_top=0x7f040001;
-        public static final int slide_out_to_bottom=0x7f040002;
-        public static final int slide_out_to_top=0x7f040003;
+        public static final int fade_in=0x7f040000;
+        public static final int fade_out=0x7f040001;
+        public static final int slide_in_from_bottom=0x7f040002;
+        public static final int slide_in_from_top=0x7f040003;
+        public static final int slide_in_left=0x7f040004;
+        public static final int slide_in_right=0x7f040005;
+        public static final int slide_out_left=0x7f040006;
+        public static final int slide_out_right=0x7f040007;
+        public static final int slide_out_to_bottom=0x7f040008;
+        public static final int slide_out_to_top=0x7f040009;
     }
     public static final class attr {
         /**  Custom divider drawable to use for elements in the action bar. 
@@ -1287,7 +1293,7 @@ containing a value of this type.
         public static final int homeAsUp=0x7f050012;
         public static final int imageView1=0x7f05005d;
         public static final int imageViewMicutu=0x7f05004f;
-        public static final int layoutComentarii=0x7f05006d;
+        public static final int layoutComentarii=0x7f05006e;
         public static final int left=0x7f05001c;
         public static final int linearLayoutComentariu=0x7f050046;
         public static final int listMode=0x7f05000e;
@@ -1321,12 +1327,13 @@ containing a value of this type.
         public static final int showCustom=0x7f050014;
         public static final int showHome=0x7f050011;
         public static final int showTitle=0x7f050013;
-        public static final int slidingmenumain=0x7f05006e;
+        public static final int slidingmenumain=0x7f05006f;
         public static final int tabMode=0x7f05000f;
         public static final int textView1=0x7f050052;
-        public static final int textView2=0x7f05006f;
-        public static final int textView3=0x7f050070;
+        public static final int textView2=0x7f050070;
+        public static final int textView3=0x7f050071;
         public static final int textViewComentarii=0x7f05006c;
+        public static final int textViewComentariiLast=0x7f05006d;
         public static final int textViewComentariu=0x7f050049;
         public static final int textViewDataComentariu=0x7f050048;
         public static final int textViewDespreText=0x7f05004e;
@@ -1433,14 +1440,14 @@ containing a value of this type.
         public static final int abs__shareactionprovider_share_with_application=0x7f07000f;
         public static final int acces_internet=0x7f070021;
         public static final int aplicatie=0x7f070025;
-        public static final int aplicatie_text=0x7f07002d;
+        public static final int aplicatie_text=0x7f07002e;
         public static final int app_name=0x7f070015;
         public static final int cauta=0x7f07001c;
         public static final int clipulLunii=0x7f07001a;
         public static final int clipulZilei=0x7f070019;
         public static final int despre=0x7f07001e;
         public static final int despre_noi=0x7f070022;
-        public static final int despre_noi_text=0x7f07002a;
+        public static final int despre_noi_text=0x7f07002b;
         public static final int inapoi=0x7f070026;
         public static final int loading=0x7f070016;
         public static final int menu_acces=0x7f070020;
@@ -1455,13 +1462,14 @@ containing a value of this type.
         public static final int pull_to_refresh_refreshing_label=0x7f070002;
         public static final int pull_to_refresh_release_label=0x7f070001;
         public static final int reguli_comentarii=0x7f070024;
-        public static final int reguli_comentarii_text=0x7f07002c;
+        public static final int reguli_comentarii_text=0x7f07002d;
         public static final int termeni_si_conditii=0x7f070023;
-        public static final int termeni_si_conditii_text=0x7f07002b;
+        public static final int termeni_si_conditii_text=0x7f07002c;
         public static final int top10zile=0x7f07001b;
         public static final int topGeneral=0x7f07001d;
         public static final int topulSaptamanii=0x7f070018;
         public static final int ultimeleClipuri=0x7f070017;
+        public static final int ultimeleComentarii=0x7f07002a;
         public static final int vezi_video=0x7f070028;
         public static final int video_image=0x7f07001f;
         public static final int voturi=0x7f070027;

@@ -27,6 +27,7 @@
 	<string name="voturi">Voturi: </string>
 	<string name="vezi_video">Play video</string>
 	<string name="open_browser">Deschide în browser</string>
+	<string name="ultimeleComentarii">Ultimele comentarii:</string>
 	
 	<string name="despre_noi_text">
 Toţi suntem sătui de încălcările repetate şi flagrante ale Codului Rutier. Autorităţile nu au nici o reacţie şi uneori puţin lipseşte să se petreacă o tragedie. Aşa a apărut trafictube.ro, o cronică a evenimentelor neplăcute din trafic, cronică la care contribuie din ce în ce mai mulţi oameni.\n\n
@@ -55,6 +56,7 @@ Regulile vor fi actualizate pe măsură ce apar noi probleme de comunicare.
 	    Trafictube pentru android, versiunea 0.1 Beta.\n\n
 	    Aplicația este înca la început și urmează să adaug mai multe funcții (login, votare, forum etc).\n\n
 	    Pentru orice eroare apărută în aplicație, orice sugestie pentru următoarea versiune sau orice ajutor vreți să îmi acordați, vă rog să mă contactați pe emailul <b>micku7zu@gmail.com</b> sau pe facebook <b>http://www.facebook.com/micku7zu</b>\n\n
-	    Aplicație realizată de Șandor Sergiu.\n
+	    Aplicație realizată de Șandor Sergiu.\n\n
+	    *NOU* Aplicația este acum open-source și se poate găsi la adresa următoare: https://github.com/micku7zu/trafictube
 	</string>
 </resources>

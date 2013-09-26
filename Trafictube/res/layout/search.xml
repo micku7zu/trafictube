@@ -26,7 +26,9 @@
         android:layout_alignRight="@+id/editTextSearch"
         android:layout_below="@+id/editTextSearch"
         android:background="@drawable/button_border"
-        android:text="@string/cauta" />
+        android:text="@string/cauta"
+        android:textColor="@color/gri"
+          android:textColorLink="@color/gri" />
     
     </RelativeLayout>
 

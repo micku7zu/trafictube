@@ -2,6 +2,7 @@ package com.micutu.trafictube;
 
 
 import java.io.IOException;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -27,7 +28,10 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class videoActivity extends Activity {
+import com.actionbarsherlock.app.SherlockActivity;
+import com.actionbarsherlock.view.MenuItem;
+
+public class videoActivity extends SherlockActivity {
 
 	private AQuery aq;
 	private String link;
@@ -48,6 +52,8 @@ public class videoActivity extends Activity {
         
         aq = new AQuery(this);
         
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+       
         //makeToast(link, 0);
 	}
 	
@@ -245,10 +251,7 @@ public class videoActivity extends Activity {
 		 startActivity(intent);
 	}
 	
-	@Override
-	public boolean onCreateOptionsMenu(Menu menu) {
-		return true;
-	}
+	
 		
 	public void makeToast(String text){ makeToast(text, 0); }
 	public void makeToast(String text, int len){
@@ -269,6 +272,22 @@ public class videoActivity extends Activity {
 	        return true;
 	    }
 	    return false;
+	}
+	
+	@Override
+	public void onBackPressed() {
+	    super.onBackPressed();
+	    overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
+	}
+	
+	@Override
+	public boolean onOptionsItemSelected(MenuItem item) {
+	    if (item.getItemId() == android.R.id.home) {
+	        finish();
+	        overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
+	        return true;
+	    }
+	    return super.onOptionsItemSelected(item);
 	}
 
 }

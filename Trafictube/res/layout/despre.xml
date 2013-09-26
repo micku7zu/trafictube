@@ -6,17 +6,20 @@
 
     <Button
         android:id="@+id/buttonDespreDespreNoi"
+        style="@drawable/button_custom"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="25dp"
         android:layout_marginLeft="30dp"
         android:layout_marginRight="30dp"
-        android:text="@string/despre_noi"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/button_border"
         android:onClick="changeDespre"
-        android:background="@drawable/button_border" />
+        android:text="@string/despre_noi"
+        android:textColor="@color/gri"
+        android:textColorLink="@color/gri" />
 
     <Button
         android:id="@+id/buttonDespreReguliComentarii"
@@ -28,7 +31,10 @@
         android:layout_marginTop="25dp"
         android:background="@drawable/button_border"
         android:onClick="changeDespre"
-        android:text="@string/reguli_comentarii" />
+        android:text="@string/reguli_comentarii" 
+        android:textColor="@color/gri"
+        android:textColorLink="@color/gri"
+        />
 
     <Button
         android:id="@+id/buttonDespreTermeniSiConditii"
@@ -40,10 +46,13 @@
         android:layout_marginTop="25dp"
         android:background="@drawable/button_border"
         android:onClick="changeDespre"
-        android:text="@string/termeni_si_conditii" />
+        android:text="@string/termeni_si_conditii"
+        android:textColor="@color/gri"
+        android:textColorLink="@color/gri" />
     
     <Button
         android:id="@+id/buttonDespreAplicatie"
+        style="@drawable/button_custom"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/buttonDespreTermeniSiConditii"
@@ -52,6 +61,8 @@
         android:layout_marginTop="25dp"
         android:background="@drawable/button_border"
         android:onClick="changeDespre"
-        android:text="@string/aplicatie" />
+        android:text="@string/aplicatie"
+        android:textColor="@color/gri"
+        android:textColorLink="@color/gri" />
     
 </RelativeLayout>

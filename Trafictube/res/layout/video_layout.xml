@@ -19,6 +19,7 @@
         android:background="@drawable/video_border"
         android:gravity="center"
         android:text="@string/app_name"
+        android:textColor="@color/gri"
         android:textAlignment="center" />
     
      <ImageView

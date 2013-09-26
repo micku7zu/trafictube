@@ -113,6 +113,14 @@
             android:textColor="@color/galben"
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:textSize="22sp" />
+         <TextView
+            android:id="@+id/textViewComentariiLast"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ultimeleComentarii"
+            android:textColor="@color/galben"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="15sp" />
         
         <LinearLayout 
             android:id="@+id/layoutComentarii"

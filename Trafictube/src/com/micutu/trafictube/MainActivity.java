@@ -31,6 +31,9 @@ import android.view.KeyEvent;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.ViewGroup;
+import android.view.animation.Animation;
+import android.view.animation.Animation.AnimationListener;
+import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ScrollView;
@@ -70,6 +73,13 @@ public class MainActivity extends SlidingActivity {
         
         aq = new AQuery(this);
         
+	}
+	public boolean onKeyUp(int keyCode, KeyEvent event) {
+	    if (keyCode == KeyEvent.KEYCODE_MENU) {
+	    	toggle();
+	        return true;
+	    }
+	    return super.onKeyUp(keyCode, event);
 	}
 	
 	public boolean onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
@@ -123,10 +133,10 @@ public class MainActivity extends SlidingActivity {
 	public void load(final String link, boolean loading){
 		
 		if(loading)
-			setContentView(R.layout.loading);
+			setContentViewM(R.layout.loading);
 		
 		if(!isOnline())
-			setContentView(R.layout.offline);
+			setContentViewM(R.layout.offline);
 		else
 			new Thread(new Runnable() {
 			    public void run() {
@@ -257,7 +267,11 @@ public class MainActivity extends SlidingActivity {
 		try {
 			
 			Document doc = Jsoup.connect(link).timeout(0).get();
-			Elements videos = doc.select("#continut .post");
+			Elements select = doc.select("#continut .bloc.desp.grila");
+			int pos = 0;
+			if(select.size() >= 1)
+				pos = 1;
+			Elements videos = select.eq(pos).select(".post");
 
 			for(Element video : videos){
 				video v = new video();
@@ -285,10 +299,13 @@ public class MainActivity extends SlidingActivity {
 			currentLink = link;
 			
 			hasNext = false;
-			if(parametru.size() == 40)
+			if(parametru.size() > 20 )
 			{
 				if(doc.select(".wp-pagenavi").size()>0)
+				{
 					hasNext = true;
+					
+				}
 			}
 			
 			System.out.println(changed);
@@ -358,10 +375,13 @@ public class MainActivity extends SlidingActivity {
 	}
 	
 	public void manipulateContent(List<video> lista){
-		setContentView(R.layout.activity_main);
+		setContentViewM(R.layout.activity_main);
 		
 		PullToRefreshScrollView mPullRefreshScrollView = (PullToRefreshScrollView) findViewById(R.id.scrollViewMain);
 		
+		
+		System.out.println(hasNext);
+		System.out.println("test");
 		if(hasNext){
 			mPullRefreshScrollView.setMode(Mode.PULL_FROM_END);
 		}else
@@ -432,7 +452,7 @@ public class MainActivity extends SlidingActivity {
 	}
 	
 	public void manipulateContentList(List<video> lista){
-		setContentView(R.layout.activity_main);
+		setContentViewM(R.layout.activity_main);
 		
 		PullToRefreshScrollView mPullRefreshScrollView = (PullToRefreshScrollView) findViewById(R.id.scrollViewMain);
 		mPullRefreshScrollView.setMode(Mode.DISABLED);
@@ -477,7 +497,7 @@ public class MainActivity extends SlidingActivity {
 		
 		currentMode = R.id.menuButtonCauta;
 		
-		setContentView(R.layout.search);
+		setContentViewM(R.layout.search);
 		
 		aq.id(R.id.buttonSearch).clicked(new OnClickListener() {
 			
@@ -522,7 +542,7 @@ public class MainActivity extends SlidingActivity {
 			
 			runOnUiThread(new Runnable() {
 			     public void run() {
-			    	 setContentView(R.layout.trafictube);
+			    	 setContentViewM(R.layout.trafictube);
 			    }
 			});
 			
@@ -539,7 +559,7 @@ public class MainActivity extends SlidingActivity {
 	}
 	
 	public void showDespre(View view){
-		setContentView(R.layout.despre);
+		setContentViewM(R.layout.despre);
 	}
 	
 	public void changeDespre(View view){
@@ -561,11 +581,11 @@ public class MainActivity extends SlidingActivity {
 		
 		if(t=="")
 		{
-			setContentView(R.layout.despre_aplicatie);
+			setContentViewM(R.layout.despre_aplicatie);
 		}
 		else
 		{
-			setContentView(R.layout.despre_text);
+			setContentViewM(R.layout.despre_text);
 			aq.id(R.id.textViewDespreText).text(t);
 		}
 	}
@@ -580,6 +600,7 @@ public class MainActivity extends SlidingActivity {
 			Intent i = new Intent(this, videoActivity.class);
 			i.putExtra("link", link);
 			startActivity(i);
+			overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right);
 		}
 		else
 			makeToast("Linkul nu este bun", 0);
@@ -606,7 +627,7 @@ public class MainActivity extends SlidingActivity {
 		case R.id.menuButtonClipulLunii:
 			currentMode = R.id.menuButtonClipulLunii;
 			
-			setContentView(R.layout.loading);
+			setContentViewM(R.layout.loading);
 			
 			load("test");
 			
@@ -615,7 +636,7 @@ public class MainActivity extends SlidingActivity {
 		case R.id.menuButtonClipulZilei:
 			currentMode = R.id.menuButtonClipulZilei;
 			
-			setContentView(R.layout.loading);
+			setContentViewM(R.layout.loading);
 			
 			load("test");
 			
@@ -624,7 +645,7 @@ public class MainActivity extends SlidingActivity {
 		case R.id.menuButtonLogo:
 			currentMode = R.id.menuButtonLogo;
 			
-			setContentView(R.layout.trafictube);
+			setContentViewM(R.layout.trafictube);
 			
 			break;
 			
@@ -683,6 +704,21 @@ public class MainActivity extends SlidingActivity {
 	        return true;
 	    }
 	    return false;
+	}
+	
+	
+	public void setContentViewM(final int id)
+	{
+		final View root = getWindow().getDecorView().findViewById(android.R.id.content);
+
+		final Animation animFadein = AnimationUtils.loadAnimation(getApplicationContext(),
+                R.anim.fade_in);      
+		
+		animFadein.setFillAfter(true);
+
+		setContentView(id);
+		root.startAnimation(animFadein);
+
 	}
 
 }

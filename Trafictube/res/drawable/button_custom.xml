@@ -1,8 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
     <item android:drawable="@color/galbenDeschis"
+          android:textColor="@color/gri"
+          android:textColorLink="@color/gri"
           android:state_pressed="true" />
     <item android:drawable="@color/galbenDeschis"
+          android:textColor="@color/gri"
+          android:textColorLink="@color/gri"
           android:state_focused="true" />
-    <item android:drawable="@color/galben" />
+    <item android:drawable="@color/galben" 
+          android:textColor="@color/gri"
+          android:textColorLink="@color/gri"
+          />
 </selector>

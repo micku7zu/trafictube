@@ -42,7 +42,9 @@
 	        android:layout_marginBottom="25dp"
 	        android:background="@drawable/button_border"
 	        android:onClick="showDespre"
-	        android:text="@string/inapoi" />
+	        android:text="@string/inapoi" 
+	        android:textColor="@color/gri"
+          android:textColorLink="@color/gri"/>
 	    
     </RelativeLayout>
 </ScrollView>

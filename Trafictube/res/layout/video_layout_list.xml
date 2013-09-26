@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:weightSum="20"
+        android:paddingTop="7dp"
+        android:paddingBottom="7dp"
+        android:background="@drawable/list_button"
+    	android:clickable="true"
+    	android:onClick="openVideoClick"
+        >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="14"
+            android:paddingLeft="5dp"
+            android:text="@string/app_name" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:text="@string/app_name" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:text="@string/app_name" />
+       
+
+    </LinearLayout>
+     
+     <View
+         android:layout_width="fill_parent"
+         android:layout_height="1dp"
+         android:background="@color/gri"
+            />
+
+</LinearLayout>

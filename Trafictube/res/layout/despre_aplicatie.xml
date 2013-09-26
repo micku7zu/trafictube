@@ -1,0 +1,48 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/gri"
+     >
+	
+    <RelativeLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:paddingBottom="25dp"
+		 >
+		
+	    <TextView
+	        android:id="@+id/textViewDespreText"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="left"
+	        android:autoLink="all"
+	        android:gravity="left"
+	        android:padding="10dp"
+	        android:text="@string/aplicatie_text"
+	        android:textColor="@color/galben" />
+
+	    <ImageView
+	        android:id="@+id/imageViewMicutu"
+	        android:layout_width="200dp"
+	        android:layout_height="200dp"
+	        android:layout_below="@+id/textViewDespreText"
+	        android:layout_centerHorizontal="true"
+	        android:src="@drawable/max2_small" />
+	    
+	    <Button
+	        android:id="@+id/buttonDespre"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:layout_alignParentRight="true"
+	        android:layout_below="@+id/imageViewMicutu"
+	        android:layout_marginTop="25dp"
+	        android:layout_marginLeft="30dp"
+	        android:layout_marginRight="30dp"
+	        android:layout_marginBottom="25dp"
+	        android:background="@drawable/button_border"
+	        android:onClick="showDespre"
+	        android:text="@string/inapoi" />
+	    
+    </RelativeLayout>
+</ScrollView>

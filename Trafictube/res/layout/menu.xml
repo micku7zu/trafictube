@@ -1,0 +1,176 @@
+
+	
+	   <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	        android:id="@+id/scrollView1"
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:layout_alignParentBottom="true"
+	        android:layout_alignParentLeft="true"
+	        android:layout_alignParentRight="true"
+	        android:background="@color/gri"
+	        >
+	
+	        <LinearLayout
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:orientation="vertical" >
+	          
+	    <ImageView
+	        android:id="@+id/menuButtonLogo"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="15dp"
+	        android:contentDescription="@string/app_name"
+	        android:onClick="menuPress"
+	        android:src="@drawable/trafictube" />
+	
+	    <Button
+	        android:id="@+id/menuButtonUltimeleClipuri"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="15dp"
+	        android:background="@drawable/button_custom"
+	        android:fontFamily="Myriad Pro"
+	        android:gravity="center_vertical|center_horizontal|left"
+	        android:paddingLeft="15dp"
+	        android:shadowColor="@color/galben"
+	        android:text="@string/ultimeleClipuri"
+	        android:textAlignment="textStart"
+	        android:textColor="@color/gri"
+	        android:textSize="16sp"
+	        android:textStyle="bold"
+	        android:onClick="menuPress"
+	        android:typeface="normal" />
+	   
+	    <Button
+	        android:id="@+id/menuButtonTopulSaptamanii"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="15dp"
+	        android:background="@drawable/button_custom"
+	        android:fontFamily="Myriad Pro"
+	        android:gravity="center_vertical|center_horizontal|left"
+	        android:paddingLeft="15dp"
+	        android:shadowColor="@color/galben"
+	        android:text="@string/topulSaptamanii"
+	        android:textAlignment="textStart"
+	        android:textColor="@color/gri"
+	        android:textSize="16sp"
+	        android:textStyle="bold"
+	        android:onClick="menuPress"
+	        android:typeface="normal" />
+	    
+	    <Button
+	        android:id="@+id/menuButtonClipulZilei"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="15dp"
+	        android:background="@drawable/button_custom"
+	        android:fontFamily="Myriad Pro"
+	        android:gravity="center_vertical|center_horizontal|left"
+	        android:paddingLeft="15dp"
+	        android:shadowColor="@color/galben"
+	        android:text="@string/clipulZilei"
+	        android:textAlignment="textStart"
+	        android:textColor="@color/gri"
+	        android:textSize="16sp"
+	        android:textStyle="bold"
+	        android:onClick="menuPress"
+	        android:typeface="normal" />
+	    
+	    <Button
+	        android:id="@+id/menuButtonClipulLunii"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="15dp"
+	        android:background="@drawable/button_custom"
+	        android:fontFamily="Myriad Pro"
+	        android:gravity="center_vertical|center_horizontal|left"
+	        android:paddingLeft="15dp"
+	        android:shadowColor="@color/galben"
+	        android:text="@string/clipulLunii"
+	        android:textAlignment="textStart"
+	        android:textColor="@color/gri"
+	        android:textSize="16sp"
+	        android:textStyle="bold"
+	        android:onClick="menuPress"
+	        android:typeface="normal" />
+	    
+	    
+	     <Button
+	         android:id="@+id/menuButtonCauta"
+	         android:layout_width="match_parent"
+	         android:layout_height="wrap_content"
+	         android:layout_marginTop="15dp"
+	         android:background="@drawable/button_custom"
+	         android:fontFamily="Myriad Pro"
+	         android:gravity="center_vertical|center_horizontal|left"
+	         android:paddingLeft="15dp"
+	         android:shadowColor="@color/galben"
+	         android:text="@string/cauta"
+	         android:textAlignment="textStart"
+	         android:textColor="@color/gri"
+	         android:textSize="16sp"
+	         android:textStyle="bold"
+	         android:typeface="normal"
+	         android:onClick="menuPress"
+	         android:visibility="visible" />
+	    
+	    <Button
+	        android:id="@+id/menuButtonTop10Zile"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="15dp"
+	        android:background="@drawable/button_custom"
+	        android:fontFamily="Myriad Pro"
+	        android:gravity="center_vertical|center_horizontal|left"
+	        android:paddingLeft="15dp"
+	        android:shadowColor="@color/galben"
+	        android:text="@string/top10zile"
+	        android:textAlignment="textStart"
+	        android:textColor="@color/gri"
+	        android:textSize="16sp"
+	        android:textStyle="bold"
+	        android:onClick="menuPress"
+	        android:typeface="normal" />
+	   
+	    
+	    <Button
+	        android:id="@+id/menuButtonTop"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="15dp"
+	        android:background="@drawable/button_custom"
+	        android:fontFamily="Myriad Pro"
+	        android:gravity="center_vertical|center_horizontal|left"
+	        android:paddingLeft="15dp"
+	        android:shadowColor="@color/galben"
+	        android:text="@string/topGeneral"
+	        android:textAlignment="textStart"
+	        android:textColor="@color/gri"
+	        android:textSize="16sp"
+	        android:textStyle="bold"
+	        android:onClick="menuPress"
+	        android:typeface="normal" />
+	    
+	    <Button
+	        android:id="@+id/menuButtonDespre"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="15dp"
+	        android:background="@drawable/button_custom"
+	        android:fontFamily="Myriad Pro"
+	        android:gravity="center_vertical|center_horizontal|left"
+	        android:paddingLeft="15dp"
+	        android:shadowColor="@color/galben"
+	        android:text="@string/despre"
+	        android:textAlignment="textStart"
+	        android:textColor="@color/gri"
+	        android:textSize="16sp"
+	        android:textStyle="bold"
+	        android:onClick="menuPress"
+	        android:typeface="normal" />
+	   
+	        </LinearLayout>
+	    </ScrollView>
+	

@@ -1,0 +1,129 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/gri"
+     >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="vertical"
+        android:background="@color/gri"
+         >
+
+        <TextView
+            android:id="@+id/textViewVideoTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:textColor="@color/galben"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textViewVideoDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:textColor="@color/galben"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="12sp" />
+
+       <LinearLayout 
+           android:id="@+id/ceva"
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           >
+       <Button
+        android:id="@+id/buttonPlayVideo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:text="@string/vezi_video"
+        android:onClick="playVideo"
+        android:background="@drawable/button_border" />
+       
+       <Button
+        android:id="@+id/buttonOpenBrowser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:text="@string/open_browser"
+        android:onClick="openBrowser"
+        android:background="@drawable/button_border" />
+       
+       </LinearLayout>
+       
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button_border"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_marginBottom="20dp"
+       		>
+       		
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/voturi"
+                android:textSize="12sp"
+                />
+            
+            <TextView
+                android:id="@+id/textViewVoturiPozitive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/app_name"
+                android:textColor="@color/green"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:textSize="12sp" />
+            
+            
+            <TextView
+                android:id="@+id/textViewVoturiNegative"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/app_name"
+                android:textColor="@color/red"
+                android:textSize="12sp" />
+            
+        </LinearLayout>
+        
+        <TextView
+            android:id="@+id/textViewComentarii"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:textColor="@color/galben"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="22sp" />
+        
+        <LinearLayout 
+            android:id="@+id/layoutComentarii"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            
+            
+        </LinearLayout>
+        
+    </LinearLayout>
+
+</ScrollView>

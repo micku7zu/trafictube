@@ -1,0 +1,16 @@
+<component name="libraryTable">
+  <library name="dexedLibs">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/bin/dexedLibs/android-query-full.0.25.5-beta-40f925f7773963ee0298f27779ae96dc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/bin/dexedLibs/pulltorefresh-fb361cae07e5fd1032f7a41173c38289.jar!/" />
+      <root url="jar://$PROJECT_DIR$/bin/dexedLibs/android-support-v4-5f41bffd369e55e5d6cf8a5f9fcb3f09.jar!/" />
+      <root url="jar://$PROJECT_DIR$/bin/dexedLibs/android-support-v4-8b984cee464a414e07e6f5bb467df52d.jar!/" />
+      <root url="jar://$PROJECT_DIR$/bin/dexedLibs/jsoup-1.7.2-bae56285ce46bcdbda411960b0108daa.jar!/" />
+      <root url="jar://$PROJECT_DIR$/bin/dexedLibs/slidingmenuu-d111264346206dbdd7c5e8290ec26fed.jar!/" />
+      <root url="jar://$PROJECT_DIR$/bin/dexedLibs/urlimageviewhelper-dd33837c9e3994afb5a2036c70627c9b.jar!/" />
+      <root url="jar://$PROJECT_DIR$/bin/dexedLibs/actionbarsherlock-8b8bf69336b1ac140e5ba8d80a9d8552.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

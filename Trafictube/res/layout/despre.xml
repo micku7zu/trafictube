@@ -1,0 +1,57 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/gri"
+     >
+
+    <Button
+        android:id="@+id/buttonDespreDespreNoi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:text="@string/despre_noi"
+        android:onClick="changeDespre"
+        android:background="@drawable/button_border" />
+
+    <Button
+        android:id="@+id/buttonDespreReguliComentarii"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/buttonDespreDespreNoi"
+        android:layout_alignRight="@+id/buttonDespreDespreNoi"
+        android:layout_below="@+id/buttonDespreDespreNoi"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/button_border"
+        android:onClick="changeDespre"
+        android:text="@string/reguli_comentarii" />
+
+    <Button
+        android:id="@+id/buttonDespreTermeniSiConditii"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/buttonDespreReguliComentarii"
+        android:layout_alignRight="@+id/buttonDespreReguliComentarii"
+        android:layout_below="@+id/buttonDespreReguliComentarii"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/button_border"
+        android:onClick="changeDespre"
+        android:text="@string/termeni_si_conditii" />
+    
+    <Button
+        android:id="@+id/buttonDespreAplicatie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/buttonDespreTermeniSiConditii"
+        android:layout_alignRight="@+id/buttonDespreTermeniSiConditii"
+        android:layout_below="@+id/buttonDespreTermeniSiConditii"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/button_border"
+        android:onClick="changeDespre"
+        android:text="@string/aplicatie" />
+    
+</RelativeLayout>

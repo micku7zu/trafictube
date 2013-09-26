@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linearLayoutComentariu"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="10dp"
+    >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/comentarii_border"
+        >
+        
+        <TextView
+            android:id="@+id/textViewNumeComentariu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+        
+        <TextView
+            android:id="@+id/textViewDataComentariu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="@string/app_name"
+            android:textSize="10sp" />
+        
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textViewComentariu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textColor="@color/griDeschisDeschis" />
+    
+</LinearLayout>

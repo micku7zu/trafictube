@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../ActionBarSherlock/ActionBarSherlock.iml" filepath="$PROJECT_DIR$/../ActionBarSherlock/ActionBarSherlock.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../PullToREfresh/PullToREfresh.iml" filepath="$PROJECT_DIR$/../PullToREfresh/PullToREfresh.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../SlidingMenuu/SlidingMenuu.iml" filepath="$PROJECT_DIR$/../SlidingMenuu/SlidingMenuu.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Trafictube.iml" filepath="$PROJECT_DIR$/Trafictube.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../UrlImageViewHelper/UrlImageViewHelper.iml" filepath="$PROJECT_DIR$/../UrlImageViewHelper/UrlImageViewHelper.iml" />
+    </modules>
+  </component>
+</project>
+

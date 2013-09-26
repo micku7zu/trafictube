@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Trafictube</string>
+    <string name="loading">Loading&#8230;</string>
+    <string name="ultimeleClipuri">ULTIMELE CLIPURI</string>
+    <string name="topulSaptamanii">TOPUL SĂPTĂMÂNII</string>
+    <string name="clipulZilei">CLIPUL ZILEI</string>
+	<string name="clipulLunii">CLIPUL LUNII</string>
+	<string name="top10zile">TOP 10 ZILE</string>
+	<string name="cauta">CAUTĂ</string>
+	<string name="topGeneral">TOP GENERAL</string>	
+	<string name="despre">DESPRE</string>
+	
+	
+	<string name="video_image">Imagine Video</string>
+	<string name="menu_acces">Trage din stânga spre dreapta sau apasă pe butonul de mai jos pentru meniu.</string>
+	<string name="acces_internet">Nu ai acces la internet. Activează-ți internetul 2G/3G sau conectează-te la Wi-Fi.</string>
+	
+	<string name="despre_noi">Despre noi</string>
+	<string name="termeni_si_conditii">Termeni și condiții</string>
+	<string name="reguli_comentarii">Reguli comentarii</string>
+	<string name="aplicatie">Aplicație</string>
+	
+	<string name="inapoi">Înapoi</string>
+	
+	<string name="voturi">Voturi: </string>
+	<string name="vezi_video">Play video</string>
+	<string name="open_browser">Deschide în browser</string>
+	
+	<string name="despre_noi_text">
+Toţi suntem sătui de încălcările repetate şi flagrante ale Codului Rutier. Autorităţile nu au nici o reacţie şi uneori puţin lipseşte să se petreacă o tragedie. Aşa a apărut trafictube.ro, o cronică a evenimentelor neplăcute din trafic, cronică la care contribuie din ce în ce mai mulţi oameni.\n\n
+Contact: dacă doriţi să ne trimiteţi filme, ne puteţi contacta pe adresa: trafictube@gmail.com
+	</string>
+	
+	<string name="termeni_si_conditii_text">
+Prin utilizarea şi vizitarea site-ului trafictube.ro (“Site”) autorii şi utilizatorii sunt de acord cu termenii şi condiţiile aplicabile. Dacă nu sunteţi de acord cu acestea, vă rugăm să nu utilizaţi şi să nu vizitaţi Site-ul.\n\n
+Administratorii Site-ului au dreptul de a modifica în orice moment termenii şi condiţiile aplicabile, fără a fi necesara notificarea prealabilă a autorilor şi / sau utilizatorilor. Dupa publicarea pe Site a termenilor şi condiţiilor modificate, acestea devin automat aplicabile. Prin urmare, vă sugerăm să revedeţi periodic prezenta secţiune.\n\n		
+Autorii şi utilizatorii sunt unicii responsabili pentru conţinutul ridicat (filme, fotografii, texte, etc.) şi pentru comentariile postate pe site-ul trafictube.ro, şi pentru consecinţele postărilor lor. Administratorii Site-ului nu au nici un fel de responsabilitate pentru conţinutul şi comentariile postate de autori şi utilizatori.\n\n		
+Ridicarea conţinutului şi postarea comentariilor implică garanţia din partea autorilor şi comentatorilor că sunt titularii tuturor drepturilor de autor asupra conţinutului, precum şi / sau că au obţinut consimţământul necesar postării acestora pe Site de la titularii drepturilor. În plus, prin ridicarea conţinutului şi postarea comentariilor pe Site fiecare dintre autorii şi utilizatorii Site-ului întelege şi acceptă că este singurul responsabil şi va despăgubi Site-ul, administratorii acestuia sau terţii pentru orice prejudiciu ce decurge din acţiunile sale.\n\n		
+Administratorii Site-ului vor înlătura orice conţinut sau comentariu cu privire la care au fost notificaţi că încalcă drepturilor de proprietate intelectuală ale terţilor. Administratorii Site-ului îşi rezervă dreptul de a înlătura orice conţinut sau comentariu fără o notificare prealabilă a autorului.\n\n		
+Autorii şi utilizatorii acordă Site-ului şi administratorilor acestuia dreptul de a publica şi utiliza în orice mod conţinutul ridicat şi comentariile postate, inclusiv, dar fără a se limita la scopuri de promovare. De asemenea, autorii şi utilizatorii înţeleg şi acceptă faptul că administratorii Site-ului au dreptul de a păstra pe servere proprii o copie a clipurilor chiar după ce acestea au fost îndepărtate sau şterse de către autori.
+	</string>
+	
+	<string name="reguli_comentarii_text">
+Nu se acceptă comentarii injurioase adresate autorilor sau celor care comentează.\n\n
+Dacă vă supără un comentariu am să vă rog să ne notificaţi pe trafictube@gmail.com.\n
+Dacă vi se pare că un autor/comentator greşeşte, încercaţi să-i spuneţi acest lucru folosind argumente reale. Jignirile nu vor ajuta cu nimic la dezbaterea problemei.\n\n		
+Comentariile de acest gen vor fi şterse. Abaterile repetate vor fi răsplătite cu banare permanentă.\n\n		
+Vă rugăm să folosiţi o adresă de mail validă.\n\n		
+Regulile vor fi actualizate pe măsură ce apar noi probleme de comunicare.
+	</string>
+	
+	<string name="aplicatie_text">
+	    Trafictube pentru android, versiunea 0.1 Beta.\n\n
+	    Aplicația este înca la început și urmează să adaug mai multe funcții (login, votare, forum etc).\n\n
+	    Pentru orice eroare apărută în aplicație, orice sugestie pentru următoarea versiune sau orice ajutor vreți să îmi acordați, vă rog să mă contactați pe emailul <b>micku7zu@gmail.com</b> sau pe facebook <b>http://www.facebook.com/micku7zu</b>\n\n
+	    Aplicație realizată de Șandor Sergiu.\n
+	</string>
+</resources>

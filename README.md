@@ -13,12 +13,12 @@ Changelog
 ==========
 
 Versiunea 0.4 beta:
-+am corectat culorile
-+am adaugat animatii
-+am corectat afisarea ultimelor videouri
-+am corectat cautarea
-+am adaugat functionalitate butonului de meniu (soft / hardware)
-+am adaugat buton de inapoi in pagina videoului
++ am corectat culorile
++ am adaugat animatii
++ am corectat afisarea ultimelor videouri
++ am corectat cautarea
++ am adaugat functionalitate butonului de meniu (soft/hardware)
++ am adaugat un buton de inapoi in pagina videoului
 
 Versiunea 0.3 Beta:
 + am reparat "force close" pe telefoanele cu android sub 4.0
